@@ -1,2 +1,2 @@
 # SQL-Practice
-Completed Tutorial Exercises  
+Completed Tutorial Exercises from [SQL Zoo](https://sqlzoo.net/).  
