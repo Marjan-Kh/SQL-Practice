@@ -1,5 +1,6 @@
 -- Completed Tutorial Exercises from SQL Zoo.
--- Basiscs / SELECT from world 
+-- This tutorial will use the SELECT command
+-- on the table world. 
 --===========================================
 -- Marjan Khamesian
 -- Date: February 2021
