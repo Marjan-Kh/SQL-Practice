@@ -1,4 +1,3 @@
--- Completed Tutorial Exercises from SQL Zoo.
 -- This tutorial is concerned with a table of
 -- Nobel prize winners.
 --===========================================
@@ -51,7 +50,9 @@ OR (subject = 'Chemistry' AND yr = 1984);
 SELECT yr, subject, winner FROM nobel
 WHERE yr = 1980 AND subject NOT IN ('Chemistry', 'Medicine');
 
--- Q.10 Show year, subject, and name of people who won a 'Medicine' prize in an early year (before 1910, not including 1910) together with winners of a 'Literature' prize in a later year (after 2004, including 2004)
+-- Q.10 Show year, subject, and name of people who won a 'Medicine' prize in an early year
+-- (before 1910, not including 1910) together with winners of a 'Literature' prize in a later
+-- year (after 2004, including 2004)
 SELECT * FROM nobel
 WHERE ( subject = 'Medicine'  AND yr < 1910 )
 OR ( subject = 'Literature' AND yr >= 2004 ); 
@@ -64,7 +65,8 @@ WHERE winner = 'PETER GR%NBERG';
 SELECT * FROM nobel
 WHERE winner = 'EUGENE O''NEILL';
 
--- Q.13 List the winners, year and subject where the winner starts with Sir. Show the most recent first, then by name order.
+-- Q.13 List the winners, year and subject where the winner starts with Sir.
+-- Show the most recent first, then by name order.
 SELECT winner, yr, subject FROM nobel
 WHERE winner LIKE 'Sir%' 
 ORDER BY yr DESC, winner;
