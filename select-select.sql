@@ -1,5 +1,4 @@
--- Completed Tutorial Exercises from SQL Zoo.
--- This tutorial looks at how we can use SELECT statements
+-- This exercise looks at how we can use SELECT statements
 -- within SELECT statements to perform more complex queries.
 --==========================================================
 -- Marjan Khamesian
