@@ -1,5 +1,4 @@
--- Completed Tutorial Exercises from SQL Zoo.
--- This tutorial will use the SELECT command
+-- This exercise will use the SELECT command
 -- on the table world. 
 --===========================================
 -- Marjan Khamesian
@@ -50,7 +49,8 @@ WHERE name LIKE 'UNITED%';
 SELECT name, population, area FROM world
 WHERE area > 3000000 OR population > 250000000;
 
--- Q8. Show the countries that are big by area (more than 3 million) or big by population (more than 250 million) but not both. Show name, population and area.
+-- Q8. Show the countries that are big by area (more than 3 million) or
+-- big by population (more than 250 million) but not both. Show name, population and area.
 SELECT name, population, area FROM world 
 WHERE ( population > 250000000 or area > 3000000 )
 AND NOT ( population > 250000000 and area > 3000000 );
@@ -69,7 +69,8 @@ WHERE GDP > 1000000000000;
 SELECT name, capital FROM world
 WHERE LEN(name) = LEN(capital);
 
--- Q12. Show the name and the capital where the first letters of each match. Don't include countries where the name and the capital are the same word.
+-- Q12. Show the name and the capital where the first letters of each match.
+-- Don't include countries where the name and the capital are the same word.
 SELECT name, capital FROM world
 WHERE LEFT(name,1) = LEFT(capital,1)
 AND name <> capital;
