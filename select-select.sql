@@ -1,10 +1,10 @@
 -- Completed Tutorial Exercises from SQL Zoo.
 -- This tutorial looks at how we can use SELECT statements
--- within SELECT statements to perform more complex queries
---=========================================================
+-- within SELECT statements to perform more complex queries.
+--==========================================================
 -- Marjan Khamesian
 -- Date: February 2021
---=========================================================
+--==========================================================
 
 -- SELECT within SELECT
 -- Q1. List each country name where the population is larger than that of 'Russia'.
