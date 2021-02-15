@@ -1,10 +1,9 @@
--- Completed Tutorial Exercises from SQL Zoo.
 -- This exercise is about aggregate functions,
 -- such as COUNT, SUM and AVG. 
---=========================================================
+--============================================
 -- Marjan Khamesian
 -- Date: February 2021
---=========================================================
+--============================================
 
 -- SUM and COUNT
 -- =============
