@@ -1,9 +1,9 @@
 -- This exercise looks at how we can use SELECT statements
 -- within SELECT statements to perform more complex queries.
---==========================================================
+--=========================================================
 -- Marjan Khamesian
 -- Date: February 2021
---==========================================================
+--=========================================================
 
 -- SELECT within SELECT
 -- Q1. List each country name where the population is larger than that of 'Russia'.
@@ -68,8 +68,8 @@ WHERE 25000000 >= ALL (SELECT population FROM world y
                        WHERE x.continent = y.continent
                        AND y.population > 0);
 
--- Q10. Some countries have populations more than three times that of any of their neighbours
--- (in the same continent). Give the countries and continents.
+-- Q10. Some countries have populations more than three times that of any of
+-- their neighbours (in the same continent). Give the countries and continents.
 SELECT name, continent FROM world x
 WHERE population > ALL(SELECT population*3 FROM world y
                        WHERE x.continent = y.continent
